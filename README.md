@@ -66,7 +66,7 @@ Test result
 ====================================================================================== test session starts ======================================================================================
 platform darwin -- Python 3.10.8, pytest-8.3.5, pluggy-1.5.0 -- /Users/mesutgunes/.pyenv/versions/3.10.8/bin/python
 cachedir: .pytest_cache
-rootdir: /Users/mesutgunes/projects/personal/sporty/new-api/testing-framework
+rootdir: /Users/mesutgunes/projects/personal/new-api/testing-framework
 configfile: pytest.ini
 testpaths: tests
 collected 4 items                                                                                                                                                                               
