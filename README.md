@@ -60,6 +60,25 @@ To run the tests, use the following command:
 pytest
 ```
 
+Test result
+```bash
+(3.10.8) ➜  testing-framework git:(main) pytest
+====================================================================================== test session starts ======================================================================================
+platform darwin -- Python 3.10.8, pytest-8.3.5, pluggy-1.5.0 -- /Users/mesutgunes/.pyenv/versions/3.10.8/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/mesutgunes/projects/personal/sporty/new-api/testing-framework
+configfile: pytest.ini
+testpaths: tests
+collected 4 items                                                                                                                                                                               
+
+tests/test_api.py::test_list_all_authors_using_author PASSED                                                                                                                              [ 25%]
+tests/test_api.py::test_list_all_authors_using_authors PASSED                                                                                                                             [ 50%]
+tests/test_api.py::test_search_by_author PASSED                                                                                                                                           [ 75%]
+tests/test_api.py::test_search_by_author_return_output_fields_format_as_text PASSED                                                                                                       [100%]
+
+======================================================================================= 4 passed in 3.84s =======================================================================================
+```
+
 This will discover and execute all test cases defined in the `tests` directory.
 
 ## Test Validation Strategy
