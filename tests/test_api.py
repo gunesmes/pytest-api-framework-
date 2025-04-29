@@ -1,9 +1,7 @@
 import pytest
 from src.api_client import ApiClient
+from src.config import API_CONFIG
 
-@pytest.fixture
-def api_client():
-    return ApiClient(base_url="https://poetrydb.org")
 
 def test_list_all_authors_using_author(api_client):
     response = api_client.get("/author")

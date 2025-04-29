@@ -81,6 +81,20 @@ tests/test_api.py::test_search_by_author_return_output_fields_format_as_text PAS
 
 This will discover and execute all test cases defined in the `tests` directory.
 
+You can also specify which environment to run tests against using the --env parameter. The framework supports multiple environments, each with different base URLs and timeouts. This allows you to easily test your API across different deployments without modifying your test code.
+
+
+```bash
+# Run tests against production environment (default)
+pytest --env=prod
+
+# Run tests against staging environment
+pytest --env=staging
+
+# Run tests against development environment
+pytest --env=dev
+```
+
 ## Test Validation Strategy
 
 The test suite employs several validation approaches to ensure API endpoints function correctly:
